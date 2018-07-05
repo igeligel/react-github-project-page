@@ -1,10 +1,26 @@
 import React, { Component } from 'react';
+import styled from 'styled-components';
+
+const RepoContainer = styled.div`
+  width: 100%;
+  background-color: white;
+`;
+
+const RepoContainerTop = styled.div`
+  border-bottom: 1px solid #e1e4e8;
+  background-color: #fafbfc;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+`;
 
 class App extends Component {
   render() {
     return (
-      <div className="repo__container">
-        <div className="repo-container--top">
+      <RepoContainer>
+        <RepoContainerTop>
           <div className="repo__header">
             <div className="repo-info__container">
               <span className="octicon octicon-repo" />
@@ -95,7 +111,7 @@ class App extends Component {
               </li>
             </ul>
           </div>
-        </div>
+        </RepoContainerTop>
         <div className="repo-content__container">
           <div className="repo-description__container">
             <span>
@@ -271,7 +287,7 @@ class App extends Component {
             </table>
           </div>
         </div>
-      </div>
+      </RepoContainer>
     );
   }
 }

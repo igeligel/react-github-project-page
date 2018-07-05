@@ -156,7 +156,10 @@ class App extends Component {
                 <span className="file-nav__button-text--main">master</span>
                 <span>▼</span>
               </button>
-              <button className="file-nav__button" style={{ 'margin-left': '5px'}}>
+              <button
+                className="file-nav__button"
+                style={{ 'margin-left': '5px' }}
+              >
                 <span className="file-nav__button-text--main">
                   New pull request
                 </span>
@@ -170,7 +173,7 @@ class App extends Component {
               </div>
               <button
                 className="file-nav__button--primary"
-                style={{ 'margin-left': '5px'}}
+                style={{ 'margin-left': '5px' }}
               >
                 <span className="file-nav__button-text--primary">
                   Clone or download
@@ -195,7 +198,7 @@ class App extends Component {
                 >
                   Merge pull request&nbsp;
                 </a>
-                <a href="" style={{'color': '#0366d6'}}>
+                <a href="" style={{ color: '#0366d6' }}>
                   #15754
                 </a>
                 <a
@@ -269,7 +272,7 @@ class App extends Component {
           </div>
         </div>
       </div>
-    )
+    );
   }
 }
 

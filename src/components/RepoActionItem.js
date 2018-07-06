@@ -70,7 +70,9 @@ export function RepoActionItem(props) {
   return (
     <StyledRepoActionItem>
       <StyledRepoActionItemButton>
-        <span className={`octicon octicon-${props.octicon}`} />
+        {props.octicon && (
+          <span className={`octicon octicon-${props.octicon}`} />
+        )}
         <StyledRepoActionItemButtonText>
           {props.actionText}
         </StyledRepoActionItemButtonText>

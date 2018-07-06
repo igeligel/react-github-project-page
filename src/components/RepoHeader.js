@@ -51,30 +51,17 @@ export function RepoHeader(props) {
           actionLink="https://github.com/emberjs/ember.js/watchers"
           actionValue="1,048"
         />
-        <div className="repo-action__item">
-          <button className="repo-action__item-button">
-            <span className="octicon octicon-star" />
-            <span className="repo-action__item-button-text">Star</span>
-          </button>
-          <a
-            className="repo-action__item-option"
-            href="https://github.com/emberjs/ember.js/stargazers"
-          >
-            18,372
-          </a>
-        </div>
-        <div className="repo-action__item">
-          <button className="repo-action__item-button">
-            <span className="octicon octicon-repo-forked" />
-            <span className="repo-action__item-button-text">Fork</span>
-          </button>
-          <a
-            className="repo-action__item-option"
-            href="https://github.com/emberjs/ember.js/network"
-          >
-            3,904
-          </a>
-        </div>
+        <RepoActionItem
+          octicon="star"
+          actionText="Star"
+          actionLink="https://github.com/emberjs/ember.js/stargazers"
+          actionValue="18,372"
+        />
+        <RepoActionItem
+          actionText="Fork"
+          actionLink="https://github.com/emberjs/ember.js/network"
+          actionValue="3,904"
+        />
       </StyledRepoActionContainer>
     </StyledRepoHeader>
   );

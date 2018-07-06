@@ -23,7 +23,7 @@ class App extends Component {
     return (
       <RepoContainer>
         <RepoContainerTop>
-          <RepoHeader />
+          <RepoHeader user={'emberjs'} />
           <div className="repo-nav__container">
             <ul className="repo-nav__list">
               <li className="repo-nav__list-item--active">

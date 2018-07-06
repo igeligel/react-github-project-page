@@ -1,21 +1,32 @@
 import React from 'react';
 import styled from 'styled-components';
 
-export function RepoHeader() {
-  const RepoHeader = styled.div`
-    margin-top: 16px;
-    background-color: #fafbfc;
-    max-width: 980px;
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-  `;
+const StyledRepoHeader = styled.div`
+  margin-top: 16px;
+  background-color: #fafbfc;
+  max-width: 980px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+`;
+
+const StyledRepoInfoContainer = styled.div`
+  font-size: 18px;
+  color: #959da5;
+`;
+
+const StyledRepoActionContainer = styled.div`
+  display: flex;
+  flex-direction: row;
+`;
+
+export function RepoHeader(props) {
   return (
-    <RepoHeader>
-      <div className="repo-info__container">
+    <StyledRepoHeader>
+      <StyledRepoInfoContainer>
         <span className="octicon octicon-repo" />
         <h1 className="repo-info__heading--first">
-          <a href="https://github.com/emberjs">emberjs</a>
+          <a href={`https://github.com/${props.user}`}>{props.user}</a>
         </h1>
         <span>/</span>
         <a
@@ -24,8 +35,8 @@ export function RepoHeader() {
         >
           ember.js
         </a>
-      </div>
-      <div className="repo-action__container">
+      </StyledRepoInfoContainer>
+      <StyledRepoActionContainer>
         <div className="repo-action__item">
           <button className="repo-action__item-button">
             <span className="octicon octicon-eye" />
@@ -62,8 +73,8 @@ export function RepoHeader() {
             3,904
           </a>
         </div>
-      </div>
-    </RepoHeader>
+      </StyledRepoActionContainer>
+    </StyledRepoHeader>
   );
 }
 

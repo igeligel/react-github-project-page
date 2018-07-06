@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
 
+import { RepoHeader } from '../components/RepoHeader';
+
 const RepoContainer = styled.div`
   width: 100%;
   background-color: white;
@@ -21,59 +23,7 @@ class App extends Component {
     return (
       <RepoContainer>
         <RepoContainerTop>
-          <div className="repo__header">
-            <div className="repo-info__container">
-              <span className="octicon octicon-repo" />
-              <h1 className="repo-info__heading--first">
-                <a href="https://github.com/emberjs">emberjs</a>
-              </h1>
-              <span>/</span>
-              <a
-                className="repo-info__name"
-                href="https://github.com/emberjs/ember.js"
-              >
-                ember.js
-              </a>
-            </div>
-            <div className="repo-action__container">
-              <div className="repo-action__item">
-                <button className="repo-action__item-button">
-                  <span className="octicon octicon-eye" />
-                  <span className="repo-action__item-button-text">Unwatch</span>
-                </button>
-                <a
-                  className="repo-action__item-option"
-                  href="https://github.com/emberjs/ember.js/watchers"
-                >
-                  1,048
-                </a>
-              </div>
-              <div className="repo-action__item">
-                <button className="repo-action__item-button">
-                  <span className="octicon octicon-star" />
-                  <span className="repo-action__item-button-text">Star</span>
-                </button>
-                <a
-                  className="repo-action__item-option"
-                  href="https://github.com/emberjs/ember.js/stargazers"
-                >
-                  18,372
-                </a>
-              </div>
-              <div className="repo-action__item">
-                <button className="repo-action__item-button">
-                  <span className="octicon octicon-repo-forked" />
-                  <span className="repo-action__item-button-text">Fork</span>
-                </button>
-                <a
-                  className="repo-action__item-option"
-                  href="https://github.com/emberjs/ember.js/network"
-                >
-                  3,904
-                </a>
-              </div>
-            </div>
-          </div>
+          <RepoHeader />
           <div className="repo-nav__container">
             <ul className="repo-nav__list">
               <li className="repo-nav__list-item--active">

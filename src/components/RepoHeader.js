@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import { RepoActionItem } from './RepoActionItem';
 
 const StyledRepoHeader = styled.div`
   margin-top: 16px;
@@ -20,35 +21,36 @@ const StyledRepoActionContainer = styled.div`
   flex-direction: row;
 `;
 
+const StyledRepoInfoHeadingFirst = styled.h1`
+  display: inline;
+  font-size: 18px;
+  font-weight: 400;
+`;
+
+const StyledRepoInfoName = styled.a`
+  font-weight: 600;
+`;
+
 export function RepoHeader(props) {
   return (
     <StyledRepoHeader>
       <StyledRepoInfoContainer>
         <span className="octicon octicon-repo" />
-        <h1 className="repo-info__heading--first">
+        <StyledRepoInfoHeadingFirst>
           <a href={`https://github.com/${props.user}`}>{props.user}</a>
-        </h1>
+        </StyledRepoInfoHeadingFirst>
         <span>/</span>
-        <a
-          className="repo-info__name"
-          href="https://github.com/emberjs/ember.js"
-        >
+        <StyledRepoInfoName href="https://github.com/emberjs/ember.js">
           ember.js
-        </a>
+        </StyledRepoInfoName>
       </StyledRepoInfoContainer>
       <StyledRepoActionContainer>
-        <div className="repo-action__item">
-          <button className="repo-action__item-button">
-            <span className="octicon octicon-eye" />
-            <span className="repo-action__item-button-text">Unwatch</span>
-          </button>
-          <a
-            className="repo-action__item-option"
-            href="https://github.com/emberjs/ember.js/watchers"
-          >
-            1,048
-          </a>
-        </div>
+        <RepoActionItem
+          octicon="eye"
+          actionText="Unwatch"
+          actionLink="https://github.com/emberjs/ember.js/watchers"
+          actionValue="1,048"
+        />
         <div className="repo-action__item">
           <button className="repo-action__item-button">
             <span className="octicon octicon-star" />

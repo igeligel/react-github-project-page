@@ -27,6 +27,15 @@ const StyledAppContainer = styled.div`
     sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
 `;
 
+const StyledRepoContentContainer = styled.div`
+  margin-top: 20px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+`;
+
 class App extends Component {
   render() {
     return (
@@ -72,7 +81,7 @@ class App extends Component {
               </ul>
             </div>
           </RepoContainerTop>
-          <div className="repo-content__container">
+          <StyledRepoContentContainer>
             <div className="repo-description__container">
               <span>
                 Ember.js - A JavaScript framework for creating ambitious web
@@ -253,7 +262,7 @@ class App extends Component {
                 </tbody>
               </table>
             </div>
-          </div>
+          </StyledRepoContentContainer>
         </RepoContainer>
       </StyledAppContainer>
     );

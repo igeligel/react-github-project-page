@@ -21,14 +21,39 @@ const StyledRepoActionContainer = styled.div`
   flex-direction: row;
 `;
 
+const StyledLink = `a:link {
+  color: #0366d6;
+  text-decoration: none;
+}
+
+a:visited {
+  color: #0366d6;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #0366d6;
+  text-decoration: underline;
+}
+
+a:active {
+  color: #0366d6;
+  text-decoration: none;
+}`;
+
 const StyledRepoInfoHeadingFirst = styled.h1`
   display: inline;
   font-size: 18px;
   font-weight: 400;
+
+  ${StyledLink};
 `;
 
 const StyledRepoInfoName = styled.a`
   font-weight: 600;
+
+  color: #0366d6;
+  text-decoration: none;
 `;
 
 export function RepoHeader(props) {
@@ -39,7 +64,7 @@ export function RepoHeader(props) {
         <StyledRepoInfoHeadingFirst>
           <a href={`https://github.com/${props.user}`}>{props.user}</a>
         </StyledRepoInfoHeadingFirst>
-        <span>/</span>
+        <span> / </span>
         <StyledRepoInfoName href="https://github.com/emberjs/ember.js">
           ember.js
         </StyledRepoInfoName>

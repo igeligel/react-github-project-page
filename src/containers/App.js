@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import styled from 'styled-components';
 
 import { RepoHeader } from '../components/RepoHeader';
+import { RepoNavContainer } from '../components/RepoNavContainer';
 
 const RepoContainer = styled.div`
   width: 100%;
@@ -43,43 +44,7 @@ class App extends Component {
         <RepoContainer>
           <RepoContainerTop>
             <RepoHeader user={'emberjs'} />
-            <div className="repo-nav__container">
-              <ul className="repo-nav__list">
-                <li className="repo-nav__list-item--active">
-                  <a className="repo-name__list-link" href="">
-                    <span className="octicon octicon-code" />
-                    <span>Code</span>
-                  </a>
-                </li>
-                <li className="repo-nav__list-item">
-                  <a className="repo-name__list-link" href="">
-                    <span className="octicon octicon-issue-opened" />
-                    <span>Issues</span>
-                    <span className="repo-nav__list-item-counter">248</span>
-                  </a>
-                </li>
-                <li className="repo-nav__list-item">
-                  <a className="repo-name__list-link" href="">
-                    <span className="octicon octicon-git-pull-request" />
-                    <span>Pull Requests</span>
-                    <span className="repo-nav__list-item-counter">101</span>
-                  </a>
-                </li>
-                <li className="repo-nav__list-item">
-                  <a className="repo-name__list-link" href="">
-                    <span className="octicon octicon-project" />
-                    <span>Projects</span>
-                    <span className="repo-nav__list-item-counter">1</span>
-                  </a>
-                </li>
-                <li className="repo-nav__list-item">
-                  <a className="repo-name__list-link" href="">
-                    <span className="octicon octicon-graph" />
-                    <span>Insights</span>
-                  </a>
-                </li>
-              </ul>
-            </div>
+            <RepoNavContainer />
           </RepoContainerTop>
           <StyledRepoContentContainer>
             <div className="repo-description__container">

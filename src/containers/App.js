@@ -3,6 +3,7 @@ import styled from 'styled-components';
 
 import { RepoHeader } from '../components/RepoHeader';
 import { RepoNavContainer } from '../components/RepoNavContainer';
+import { RepoDescriptionContainer } from '../components/RepoDescriptionContainer';
 
 const RepoContainer = styled.div`
   width: 100%;
@@ -47,18 +48,7 @@ class App extends Component {
             <RepoNavContainer />
           </RepoContainerTop>
           <StyledRepoContentContainer>
-            <div className="repo-description__container">
-              <span>
-                Ember.js - A JavaScript framework for creating ambitious web
-                applications
-              </span>
-              <a
-                className="repo-description__link"
-                href="http://www.emberjs.com"
-              >
-                http://www.emberjs.com
-              </a>
-            </div>
+            <RepoDescriptionContainer />
             <div className="repo-tag__container">
               <ul className="repo-tag__list">
                 <li className="repo-tag__list-item">

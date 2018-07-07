@@ -4,6 +4,7 @@ import styled from 'styled-components';
 import { RepoHeader } from '../components/RepoHeader';
 import { RepoNavContainer } from '../components/RepoNavContainer';
 import { RepoDescriptionContainer } from '../components/RepoDescriptionContainer';
+import { RepoTagContainer } from '../components/RepoTagContainer';
 
 const RepoContainer = styled.div`
   width: 100%;
@@ -49,20 +50,7 @@ class App extends Component {
           </RepoContainerTop>
           <StyledRepoContentContainer>
             <RepoDescriptionContainer />
-            <div className="repo-tag__container">
-              <ul className="repo-tag__list">
-                <li className="repo-tag__list-item">
-                  <a className="repo-tag__link" href="">
-                    ember
-                  </a>
-                </li>
-                <li className="repo-tag__list-item">
-                  <a className="repo-tag__link" href="">
-                    javascript
-                  </a>
-                </li>
-              </ul>
-            </div>
+            <RepoTagContainer />
             <div className="repo-summary__container">
               <div className="repo-summary__stats-container">
                 <a className="repo-summary__stats-link" href="">

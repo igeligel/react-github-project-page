@@ -5,6 +5,7 @@ import { RepoHeader } from '../components/RepoHeader';
 import { RepoNavContainer } from '../components/RepoNavContainer';
 import { RepoDescriptionContainer } from '../components/RepoDescriptionContainer';
 import { RepoTagContainer } from '../components/RepoTagContainer';
+import { RepoSummaryContainer } from '../components/RepoSummaryContainer';
 
 const RepoContainer = styled.div`
   width: 100%;
@@ -51,37 +52,7 @@ class App extends Component {
           <StyledRepoContentContainer>
             <RepoDescriptionContainer />
             <RepoTagContainer />
-            <div className="repo-summary__container">
-              <div className="repo-summary__stats-container">
-                <a className="repo-summary__stats-link" href="">
-                  <span className="octicon octicon-history" />
-                  <span className="repo-summary__stats-amount">16,928</span>
-                  <span className="repo-summary__stats-title">commits</span>
-                </a>
-                <a className="repo-summary__stats-link" href="">
-                  <span className="octicon octicon-git-branch" />
-                  <span className="repo-summary__stats-amount">53</span>
-                  <span className="repo-summary__stats-title">branches</span>
-                </a>
-                <a className="repo-summary__stats-link" href="">
-                  <span className="octicon octicon-tag" />
-                  <span className="repo-summary__stats-amount">313</span>
-                  <span className="repo-summary__stats-title">releases</span>
-                </a>
-                <a className="repo-summary__stats-link" href="">
-                  <span className="octicon octicon-organization" />
-                  <span className="repo-summary__stats-amount">731</span>
-                  <span className="repo-summary__stats-title">
-                    contributors
-                  </span>
-                </a>
-                <a className="repo-summary__stats-link" href="">
-                  <span className="octicon octicon-law" />
-                  <span className="repo-summary__stats-title">MIT</span>
-                </a>
-              </div>
-              <div className="repo-summary__stats-graph" />
-            </div>
+            <RepoSummaryContainer />
             <div className="file-nav">
               <div className="file-nav__container">
                 <button className="file-nav__button">

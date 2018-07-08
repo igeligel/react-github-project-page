@@ -39,6 +39,15 @@ const StyledRepoFilesTableFileName = styled.td`
   box-sizing: border-box;
   padding-top: 0.5em;
   padding-bottom: 0.5em;
+
+  > a {
+    color: #0366d6;
+    text-decoration: none;
+
+    :hover {
+      text-decoration: underline;
+    }
+  }
 `;
 
 const StyledRepoFilesTableCommitMessage = styled.td`
@@ -49,6 +58,11 @@ const StyledRepoFilesTableCommitMessage = styled.td`
   > a {
     color: #6a737d;
     text-decoration: none;
+
+    :hover {
+      color: #0366d6;
+      text-decoration: underline;
+    }
   }
 `;
 

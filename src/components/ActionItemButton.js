@@ -20,12 +20,12 @@ const StyledRepoActionItemButtonText = styled.span`
   margin-left: 0.3em;
 `;
 
-export function ActionItemButton(props) {
+export function ActionItemButton({ octicon, actionText }) {
   return (
     <StyledRepoActionItemButton>
-      {props.octicon && <span className={`octicon octicon-${props.octicon}`} />}
+      {octicon && <span className={`octicon octicon-${octicon}`} />}
       <StyledRepoActionItemButtonText>
-        {props.actionText}
+        {actionText}
       </StyledRepoActionItemButtonText>
     </StyledRepoActionItemButton>
   );

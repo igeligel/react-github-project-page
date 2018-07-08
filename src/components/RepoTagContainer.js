@@ -38,7 +38,7 @@ const StyledRepoTagLink = styled.a`
   }
 `;
 
-export function RepoTagContainer(props) {
+export const RepoTagContainer = (props) => {
   return (
     <StyledRepoTagContainer>
       <StyledRepoTagList>
@@ -51,7 +51,7 @@ export function RepoTagContainer(props) {
       </StyledRepoTagList>
     </StyledRepoTagContainer>
   );
-}
+};
 
 export default {
   RepoTagContainer,

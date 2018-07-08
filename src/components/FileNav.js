@@ -84,7 +84,7 @@ const StyledFileNavButtonTextAddition = styled.span`
   opacity: 0.75;
 `;
 
-export function FileNav(props) {
+export const FileNav = (props) => {
   return (
     <StyledFileNav>
       <StyledFileNavContainer>
@@ -116,7 +116,7 @@ export function FileNav(props) {
       </StyledFileNavContainer>
     </StyledFileNav>
   );
-}
+};
 
 export default {
   FileNav,

@@ -55,7 +55,7 @@ const StyledRepoNameListLink = styled.a`
   text-decoration: none;
 `;
 
-export function RepoNavContainer(pros) {
+export const RepoNavContainer = (pros) => {
   return (
     <StlyedRepoNavContainer>
       <StyledRepoNavList>
@@ -95,7 +95,7 @@ export function RepoNavContainer(pros) {
       </StyledRepoNavList>
     </StlyedRepoNavContainer>
   );
-}
+};
 
 export default {
   RepoNavContainer,

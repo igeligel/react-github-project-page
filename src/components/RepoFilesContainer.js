@@ -79,7 +79,7 @@ const StyledRepoFilesTableTime = styled.td`
   text-align: right;
 `;
 
-export function RepoFilesContainer(props) {
+export const RepoFilesContainer = (props) => {
   return (
     <StyledRepoFilesContainer>
       <table>
@@ -134,7 +134,7 @@ export function RepoFilesContainer(props) {
       </table>
     </StyledRepoFilesContainer>
   );
-}
+};
 
 export default {
   RepoFilesContainer,

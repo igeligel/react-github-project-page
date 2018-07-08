@@ -66,7 +66,7 @@ const StyledRepoActionItemOption = styled.a`
   }
 `;
 
-export function ActionItem(props) {
+export const ActionItem = (props) => {
   return (
     <StyledRepoActionItem>
       <StyledRepoActionItemButton>
@@ -82,7 +82,7 @@ export function ActionItem(props) {
       </StyledRepoActionItemOption>
     </StyledRepoActionItem>
   );
-}
+};
 
 export default {
   ActionItem,

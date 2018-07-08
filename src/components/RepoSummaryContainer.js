@@ -54,7 +54,7 @@ const StyledRepoSummaryStatsGraph = styled.div`
   width: 100%;
 `;
 
-export function RepoSummaryContainer(props) {
+export const RepoSummaryContainer = (props) => {
   return (
     <StyledRepoSummaryContainer>
       <StyledRepoSummaryStatsContainer>
@@ -88,7 +88,7 @@ export function RepoSummaryContainer(props) {
       <StyledRepoSummaryStatsGraph />
     </StyledRepoSummaryContainer>
   );
-}
+};
 
 export default {
   RepoSummaryContainer,

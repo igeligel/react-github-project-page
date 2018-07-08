@@ -18,7 +18,7 @@ const StyledRepoDescriptionLink = styled.a`
   }
 `;
 
-export function RepoDescriptionContainer(props) {
+export const RepoDescriptionContainer = (props) => {
   return (
     <StyledRepoDescriptionContainer>
       <span>
@@ -30,7 +30,7 @@ export function RepoDescriptionContainer(props) {
       </StyledRepoDescriptionLink>
     </StyledRepoDescriptionContainer>
   );
-}
+};
 
 export default {
   RepoDescriptionContainer,

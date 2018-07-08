@@ -58,7 +58,7 @@ const StyledRepoActivityEventTime = styled.div`
   align-items: center;
 `;
 
-export function RepoActivityContainer(props) {
+export const RepoActivityContainer = (props) => {
   return (
     <StyledRepoActivityContainer>
       <div>
@@ -91,7 +91,7 @@ export function RepoActivityContainer(props) {
       </StyledRepoActivityEventTime>
     </StyledRepoActivityContainer>
   );
-}
+};
 
 export default {
   RepoActivityContainer,

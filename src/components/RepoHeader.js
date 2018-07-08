@@ -56,7 +56,7 @@ const StyledRepoInfoName = styled.a`
   text-decoration: none;
 `;
 
-export function RepoHeader(props) {
+export const RepoHeader = (props) => {
   return (
     <StyledRepoHeader>
       <StyledRepoInfoContainer>
@@ -90,7 +90,7 @@ export function RepoHeader(props) {
       </StyledRepoActionContainer>
     </StyledRepoHeader>
   );
-}
+};
 
 export default {
   RepoHeader,

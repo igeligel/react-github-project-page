@@ -95,7 +95,7 @@ export const FileNav = (props) => {
           <StyledFileNavButtonTextMain> master </StyledFileNavButtonTextMain>
           <span>▼</span>
         </StyledFileNavButton>
-        <StyledFileNavButton style={{ 'margin-left': '5px' }}>
+        <StyledFileNavButton style={{ marginLeft: '5px' }}>
           <StyledFileNavButtonTextMain>
             New pull request
           </StyledFileNavButtonTextMain>
@@ -107,7 +107,7 @@ export const FileNav = (props) => {
           <button>Upload files</button>
           <button>Find file</button>
         </StyledFileNavButtonGroup>
-        <StyledFileNavButtonPrimary style={{ 'margin-left': '5px' }}>
+        <StyledFileNavButtonPrimary style={{ marginLeft: '5px' }}>
           <StyledFileNavButtonTextPrimary>
             Clone or download
           </StyledFileNavButtonTextPrimary>

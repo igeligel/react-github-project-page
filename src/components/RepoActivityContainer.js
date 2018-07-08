@@ -73,7 +73,7 @@ export const RepoActivityContainer = (props) => {
           <StyledRepoActivityEventText href="https://github.com/emberjs/ember.js/commit/527e517eddf787740e3b6608bff1cf79b83660b5">
             Merge pull request&nbsp;
           </StyledRepoActivityEventText>
-          <a href="" style={{ color: '#0366d6', 'text-decoration': 'none' }}>
+          <a href="" style={{ color: '#0366d6', textDecoration: 'none' }}>
             #15754
           </a>
           <StyledRepoActivityEventText href="https://github.com/emberjs/ember.js/commit/527e517eddf787740e3b6608bff1cf79b83660b5">

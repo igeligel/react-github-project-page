@@ -21,8 +21,6 @@ const StyledRepoActionItemButtonText = styled.span`
 `;
 
 export function ActionItemButton(props) {
-  // eslint-disable-next-line
-  console.log(props);
   return (
     <StyledRepoActionItemButton>
       {props.octicon && <span className={`octicon octicon-${props.octicon}`} />}

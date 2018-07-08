@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import { RepoActionItem } from './RepoActionItem';
+import { ActionItem } from './ActionItem';
 
 const StyledRepoHeader = styled.div`
   margin-top: 16px;
@@ -70,19 +70,19 @@ export function RepoHeader(props) {
         </StyledRepoInfoName>
       </StyledRepoInfoContainer>
       <StyledRepoActionContainer>
-        <RepoActionItem
+        <ActionItem
           octicon="eye"
           actionText="Unwatch"
           actionLink="https://github.com/emberjs/ember.js/watchers"
           actionValue="1,048"
         />
-        <RepoActionItem
+        <ActionItem
           octicon="star"
           actionText="Star"
           actionLink="https://github.com/emberjs/ember.js/stargazers"
           actionValue="18,372"
         />
-        <RepoActionItem
+        <ActionItem
           actionText="Fork"
           actionLink="https://github.com/emberjs/ember.js/network"
           actionValue="3,904"

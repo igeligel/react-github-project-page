@@ -22,6 +22,10 @@ const StyledRepoFilesContainer = styled.div`
     border-bottom: 1px solid #eaecef;
     border-left: 1px solid #eaecef;
     border-right: 1px solid #eaecef;
+
+    :hover {
+      background-color: rgb(246, 248, 250);
+    }
   }
 `;
 

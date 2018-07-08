@@ -8,6 +8,7 @@ import { RepoTagContainer } from '../components/RepoTagContainer';
 import { RepoSummaryContainer } from '../components/RepoSummaryContainer';
 import { FileNav } from '../components/FileNav';
 import { RepoActivityContainer } from '../components/RepoActivityContainer';
+import { RepoFilesContainer } from '../components/RepoFilesContainer';
 
 const RepoContainer = styled.div`
   width: 100%;
@@ -57,58 +58,7 @@ class App extends Component {
             <RepoSummaryContainer />
             <FileNav />
             <RepoActivityContainer />
-            <div className="repo-files__container">
-              <table>
-                <tbody>
-                  <tr>
-                    <td className="repo-files__table-icon">
-                      <span className="octicon octicon-file-directory" />
-                    </td>
-                    <td className="repo-files__table-file-name">
-                      <a href="">bin</a>
-                    </td>
-                    <td className="repo-files__table-commit-message">
-                      <a href="https://github.com/emberjs/ember.js/commit/45d9f1a4d5f530bd343433b2d3aeb5a1574a4d52">
-                        split browser runner out.
-                      </a>
-                    </td>
-                    <td className="repo-files__table-time">2 months ago</td>
-                  </tr>
-                  <tr>
-                    <td className="repo-files__table-icon">
-                      <span className="octicon octicon-file-directory" />
-                    </td>
-                    <td className="repo-files__table-file-name">
-                      <a href="https://github.com/emberjs/ember.js/tree/master/bin">
-                        blueprints
-                      </a>
-                    </td>
-                    <td className="repo-files__table-commit-message">
-                      <a href="https://github.com/emberjs/ember.js/commit/af4f272e452bdd144e16b3bc5671ca874d416e61">
-                        Cleanup deprecate feature parsing.
-                      </a>
-                    </td>
-                    <td className="repo-files__table-time">18 days ago</td>
-                  </tr>
-                  <tr>
-                    <td className="repo-files__table-icon">
-                      <span className="octicon octicon-file-directory" />
-                    </td>
-                    <td className="repo-files__table-file-name">
-                      <a href="https://github.com/emberjs/ember.js/tree/master/broccoli">
-                        broccoli
-                      </a>
-                    </td>
-                    <td className="repo-files__table-commit-message">
-                      <a href="https://github.com/emberjs/ember.js/commit/8a7318e9c0f3e58f1e9cc7a6ce591d6c83fcb351">
-                        Remove legacy packages structure.
-                      </a>
-                    </td>
-                    <td className="repo-files__table-time">a month ago</td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
+            <RepoFilesContainer />
           </StyledRepoContentContainer>
         </RepoContainer>
       </StyledAppContainer>

@@ -7,6 +7,7 @@ import { RepoDescriptionContainer } from '../components/RepoDescriptionContainer
 import { RepoTagContainer } from '../components/RepoTagContainer';
 import { RepoSummaryContainer } from '../components/RepoSummaryContainer';
 import { FileNav } from '../components/FileNav';
+import { RepoActivityContainer } from '../components/RepoActivityContainer';
 
 const RepoContainer = styled.div`
   width: 100%;
@@ -55,42 +56,7 @@ class App extends Component {
             <RepoTagContainer />
             <RepoSummaryContainer />
             <FileNav />
-            <div className="repo-activity__container">
-              <div>
-                <div className="repo-activity__event-description">
-                  <img
-                    src="https://avatars2.githubusercontent.com/u/61024?s=60&v=4"
-                    alt="Person xyz"
-                  />
-                  <a className="repo-activity__username" href="">
-                    igeligel&nbsp;
-                  </a>
-                  <a
-                    className="repo-activity__event-text"
-                    href="https://github.com/emberjs/ember.js/commit/527e517eddf787740e3b6608bff1cf79b83660b5"
-                  >
-                    Merge pull request&nbsp;
-                  </a>
-                  <a href="" style={{ color: '#0366d6' }}>
-                    #15754
-                  </a>
-                  <a
-                    className="repo-activity__event-text"
-                    href="https://github.com/emberjs/ember.js/commit/527e517eddf787740e3b6608bff1cf79b83660b5"
-                  >
-                    &nbsp;from bekzod/remove-derpication
-                  </a>
-                  <button className="repo-activity__button">...</button>
-                </div>
-              </div>
-              <div className="repo-activity__event-time">
-                <span>Latest commit&nbsp;</span>
-                <a href="https://github.com/emberjs/ember.js/commit/527e517eddf787740e3b6608bff1cf79b83660b5">
-                  527e517
-                </a>
-                <span>&nbsp;18 hours ago</span>
-              </div>
-            </div>
+            <RepoActivityContainer />
             <div className="repo-files__container">
               <table>
                 <tbody>

@@ -6,6 +6,7 @@ import { RepoNavContainer } from '../components/RepoNavContainer';
 import { RepoDescriptionContainer } from '../components/RepoDescriptionContainer';
 import { RepoTagContainer } from '../components/RepoTagContainer';
 import { RepoSummaryContainer } from '../components/RepoSummaryContainer';
+import { FileNav } from '../components/FileNav';
 
 const RepoContainer = styled.div`
   width: 100%;
@@ -53,41 +54,7 @@ class App extends Component {
             <RepoDescriptionContainer />
             <RepoTagContainer />
             <RepoSummaryContainer />
-            <div className="file-nav">
-              <div className="file-nav__container">
-                <button className="file-nav__button">
-                  <span className="file-nav__button-text--addition">
-                    Branch:
-                  </span>
-                  <span className="file-nav__button-text--main">master</span>
-                  <span>▼</span>
-                </button>
-                <button
-                  className="file-nav__button"
-                  style={{ 'margin-left': '5px' }}
-                >
-                  <span className="file-nav__button-text--main">
-                    New pull request
-                  </span>
-                </button>
-              </div>
-              <div className="file-nav__container">
-                <div className="file-nav__button-group">
-                  <button>Create new file</button>
-                  <button>Upload files</button>
-                  <button>Find file</button>
-                </div>
-                <button
-                  className="file-nav__button--primary"
-                  style={{ 'margin-left': '5px' }}
-                >
-                  <span className="file-nav__button-text--primary">
-                    Clone or download
-                  </span>
-                  <span>▼</span>
-                </button>
-              </div>
-            </div>
+            <FileNav />
             <div className="repo-activity__container">
               <div>
                 <div className="repo-activity__event-description">

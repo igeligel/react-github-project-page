@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import { ActionItemButtonText } from './ActionItemButtonText';
 
 const StyledRepoActionItemButton = styled.button`
   cursor: pointer;
@@ -15,18 +16,11 @@ const StyledRepoActionItemButton = styled.button`
   padding: 3px 10px;
 `;
 
-const StyledRepoActionItemButtonText = styled.span`
-  font-weight: 600;
-  margin-left: 0.3em;
-`;
-
 export function ActionItemButton({ octicon, actionText }) {
   return (
     <StyledRepoActionItemButton>
       {octicon && <span className={`octicon octicon-${octicon}`} />}
-      <StyledRepoActionItemButtonText>
-        {actionText}
-      </StyledRepoActionItemButtonText>
+      <ActionItemButtonText actionText={actionText} />
     </StyledRepoActionItemButton>
   );
 }

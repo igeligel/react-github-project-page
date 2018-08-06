@@ -1,6 +1,8 @@
 import React from 'react';
 import styled from 'styled-components';
 
+import { FileNavButtonTextAddition } from './FileNavButtonTextAddition';
+
 const StyledFileNav = styled.div`
   margin-top: 1em;
   max-width: 980px;
@@ -79,19 +81,12 @@ const StyledFileNavButtonTextPrimary = styled.span`
   font-weight: 600;
 `;
 
-const StyledFileNavButtonTextAddition = styled.span`
-  font-weight: 500;
-  opacity: 0.75;
-`;
-
 export const FileNav = (props) => {
   return (
     <StyledFileNav>
       <StyledFileNavContainer>
         <StyledFileNavButton>
-          <StyledFileNavButtonTextAddition>
-            Branch:
-          </StyledFileNavButtonTextAddition>
+          <FileNavButtonTextAddition />
           <StyledFileNavButtonTextMain> master </StyledFileNavButtonTextMain>
           <span>▼</span>
         </StyledFileNavButton>

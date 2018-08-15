@@ -2,6 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 
 import { FileNavButtonTextAddition } from './FileNavButtonTextAddition';
+import { FileNavButtonTextMain } from './FileNavButtonTextMain';
 
 const StyledFileNav = styled.div`
   margin-top: 1em;
@@ -27,10 +28,6 @@ const StyledFileNavButton = styled.button`
   border: 1px solid rgba(27, 31, 35, 0.2);
   display: inline-block;
   background: linear-gradient(-180deg, #fafbfc 0%, #eff3f6 90%);
-`;
-
-const StyledFileNavButtonTextMain = styled.span`
-  font-weight: 600;
 `;
 
 const StyledFileNavButtonGroup = styled.div`
@@ -87,13 +84,11 @@ export const FileNav = (props) => {
       <StyledFileNavContainer>
         <StyledFileNavButton>
           <FileNavButtonTextAddition />
-          <StyledFileNavButtonTextMain> master </StyledFileNavButtonTextMain>
+          <FileNavButtonTextMain text={' master '} />
           <span>▼</span>
         </StyledFileNavButton>
         <StyledFileNavButton style={{ marginLeft: '5px' }}>
-          <StyledFileNavButtonTextMain>
-            New pull request
-          </StyledFileNavButtonTextMain>
+          <FileNavButtonTextMain text={'New pull request'} />
         </StyledFileNavButton>
       </StyledFileNavContainer>
       <StyledFileNavContainer>

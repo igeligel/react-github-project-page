@@ -3,6 +3,7 @@ import styled from 'styled-components';
 
 import { FileNavButtonTextAddition } from './FileNavButtonTextAddition';
 import { FileNavButtonTextMain } from './FileNavButtonTextMain';
+import { FileNavButtonTextPrimary } from './FileNavButtonTextPrimary';
 
 const StyledFileNav = styled.div`
   margin-top: 1em;
@@ -74,10 +75,6 @@ const StyledFileNavButtonPrimary = styled.button`
   cursor: pointer;
 `;
 
-const StyledFileNavButtonTextPrimary = styled.span`
-  font-weight: 600;
-`;
-
 export const FileNav = (props) => {
   return (
     <StyledFileNav>
@@ -98,9 +95,7 @@ export const FileNav = (props) => {
           <button>Find file</button>
         </StyledFileNavButtonGroup>
         <StyledFileNavButtonPrimary style={{ marginLeft: '5px' }}>
-          <StyledFileNavButtonTextPrimary>
-            Clone or download
-          </StyledFileNavButtonTextPrimary>
+          <FileNavButtonTextPrimary />
           <span>▼</span>
         </StyledFileNavButtonPrimary>
       </StyledFileNavContainer>
